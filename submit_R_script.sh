@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Script to call the job scheduler on the cluster
 
 # The R scripts folder is taken as an input
