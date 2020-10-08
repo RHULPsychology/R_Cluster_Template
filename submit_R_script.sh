@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Script to call the job scheduler on the cluster
 
 # The R scripts folder is taken as an input
@@ -24,5 +24,5 @@ for database_file in "${database_file_list[@]}"; do
     qsub    -l h_rss=8G \
             -o ${OUTPUT_LOG_DIR}/R_${database_file}.out \
             -e ${OUTPUT_LOG_DIR}/R_${database_file}.err \
-            ./$script_folder/$script_file $database_file;       
+            bash $script_folder/call_R_Script.sh $script_folder $script_file $database_file;
 done
