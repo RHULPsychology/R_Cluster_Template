@@ -11,7 +11,7 @@ database_file_list=$3
 # Create log folder for output and error files
 # Make sure to change this according to your account and that this folder exists
 
-OUTPUT_LOG_DIR=$(script_folder)/log
+OUTPUT_LOG_DIR=~/log
 mkdir -p $OUTPUT_LOG_DIR
 echo "created log folders successfully"
 
